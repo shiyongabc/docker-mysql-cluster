@@ -1,5 +1,10 @@
 # server listen addr
 addr : 0.0.0.0:9090
+# the web api server
+web_addr : 0.0.0.0:9200
+#HTTP Basic Auth
+web_user : admin
+web_password : admin
 
 # server user and password
 user :  kingshard
