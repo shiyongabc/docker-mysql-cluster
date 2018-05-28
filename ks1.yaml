@@ -60,7 +60,7 @@ nodes :
     password : 123456
 
     # master represents a real mysql master server
-    master : 220.197.198.98:3306
+    master : 220.197.198.98:3307
 
     # slave represents a real mysql salve server,and the number after '@' is
     # read load weight of this slave.
