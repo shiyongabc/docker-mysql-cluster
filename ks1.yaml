@@ -3,8 +3,8 @@ addr : 0.0.0.0:9696
 # the web api server
 
 # server user and password
-user :  kingshard
-password : kingshard
+user :  root
+password : 123456
 
 # if set log_path, the sql log will write into log_path/sql.log,the system log
 # will write into log_path/sys.log

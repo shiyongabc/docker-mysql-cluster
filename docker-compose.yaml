@@ -38,6 +38,9 @@ services:
           - "9696:9696"
       expose:
           - "9696"
+      environment:
+          - MYSQL_ROOT_PASSWORD=${ROOT_PASSWORD}
+          - MYSQL_DATABASE=${DATABASE}
       links:
           - mysql1
           - mysql2
