@@ -47,6 +47,6 @@ networks: # docker网络设置
     driver: bridge # 桥接
     ipam: # 要使用静态ip必须使用ipam插件
       driver: default
-      config:
-      - subnet: 172.17.0.0/16
-        gateway: 172.17.0.1
+#      config:
+#      - subnet: 172.17.0.0/16
+#        gateway: 172.17.0.1
