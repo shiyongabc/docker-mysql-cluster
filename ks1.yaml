@@ -24,7 +24,7 @@ log_sql: on
 #blacklist_sql_file: /Users/flike/blacklist
 
 # only allow this ip list ip to connect kingshard
-allow_ips: 220.197.198.85 112.74.52.18
+allow_ips: 220.197.198.85 112.74.186.73
 
 # the charset of kingshard, if you don't set this item
 # the default charset of kingshard is utf8.
