@@ -1,5 +1,5 @@
 # server listen addr
-addr : 0.0.0.0:9090
+addr : 0.0.0.0:9696
 # the web api server
 
 # server user and password

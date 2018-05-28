@@ -35,9 +35,9 @@ services:
       volumes:
           - ./ks1.yaml:/etc/ks.yaml
       ports:
-          - "9090:9090"
+          - "9696:9696"
       expose:
-          - "9090"
+          - "9696"
       links:
           - mysql1
           - mysql2
