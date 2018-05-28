@@ -1,4 +1,8 @@
 version: '2'
+networks:
+  default:
+    external:
+      name: testwifi
 services:
     mysql1:
       container_name: "mysql1"
@@ -6,7 +10,7 @@ services:
       volumes:
           - ./${MYSQL1_SAVE_PATH}:/var/lib/mysql
       networks:
-          -  mysql
+          -  testwifi
       expose:
           - "3306"
       environment:
@@ -20,7 +24,7 @@ services:
       volumes:
           - ./${MYSQL2_SAVE_PATH}:/var/lib/mysql
       networks:
-          -  mysql
+          -  testwifi
       expose:
           - "3306"
       environment:
@@ -45,11 +49,11 @@ services:
           - mysql1
           - mysql2
       restart: always
-networks: # docker网络设置
-  mysql: # 自定义网络名称
-    driver: bridge # 桥接
-    ipam: # 要使用静态ip必须使用ipam插件
-      driver: default
+#networks: # docker网络设置
+#  mysql: # 自定义网络名称
+#    driver: bridge # 桥接
+#    ipam: # 要使用静态ip必须使用ipam插件
+#      driver: default
 #      config:
 #      - subnet: 172.17.0.0/16
 #        gateway: 172.17.0.1
