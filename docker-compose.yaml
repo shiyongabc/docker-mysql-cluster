@@ -30,7 +30,7 @@ services:
     
     kingshard:
       container_name: "kingshard"
-      image: mysql:latest
+      image: mysql:5.7
       image: matjazmav/kingshard
       volumes:
           - ./ks1.yaml:/etc/ks.yaml
