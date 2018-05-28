@@ -10,8 +10,8 @@ services:
       volumes:
           - ./${MYSQL1_SAVE_PATH}:/var/lib/mysql
 
-      expose:
-          - "3306"
+      ports:
+          - "3306:3306"
       environment:
           - MYSQL_ROOT_PASSWORD=${ROOT_PASSWORD}
           - MYSQL_DATABASE=${DATABASE}
@@ -23,8 +23,8 @@ services:
       volumes:
           - ./${MYSQL2_SAVE_PATH}:/var/lib/mysql
 
-      expose:
-          - "3306"
+      ports:
+          - "3307:3306"
       environment:
           - MYSQL_ROOT_PASSWORD=${ROOT_PASSWORD}
           - MYSQL_DATABASE=${DATABASE}
@@ -38,8 +38,7 @@ services:
           - ./ks1.yaml:/etc/ks.yaml
       ports:
           - "9696:9696"
-      expose:
-          - "9696"
+
       environment:
           - MYSQL_ROOT_PASSWORD=${ROOT_PASSWORD}
           - MYSQL_DATABASE=${DATABASE}
