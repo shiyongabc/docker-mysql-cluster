@@ -2,7 +2,7 @@ version: '2'
 services:
     mysql1:
       container_name: "mysql1"
-      image: mysql:latest
+      image: mysql:5.7
       volumes:
           - ./${MYSQL1_SAVE_PATH}:/var/lib/mysql
       networks:
@@ -16,7 +16,7 @@ services:
     
     mysql2:
       container_name: "mysql2"
-      image: mysql:latest
+      image: mysql:5.7
       volumes:
           - ./${MYSQL2_SAVE_PATH}:/var/lib/mysql
       networks:
