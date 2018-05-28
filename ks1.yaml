@@ -1,5 +1,5 @@
 # server listen addr
-addr : 0.0.0.0:9696
+addr : 0.0.0.0:9090
 # the web api server
 
 # server user and password
@@ -60,7 +60,7 @@ nodes :
     password : 123456
 
     # master represents a real mysql master server
-    master : 220.197.198.98:3307
+    master : 220.197.198.98:50070
 
     # slave represents a real mysql salve server,and the number after '@' is
     # read load weight of this slave.

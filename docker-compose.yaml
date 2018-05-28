@@ -24,7 +24,7 @@ services:
           - ./${MYSQL2_SAVE_PATH}:/var/lib/mysql
 
       ports:
-          - "3307:3306"
+          - "50070:3306"
       environment:
           - MYSQL_ROOT_PASSWORD=${ROOT_PASSWORD}
           - MYSQL_DATABASE=${DATABASE}
@@ -37,7 +37,7 @@ services:
       volumes:
           - ./ks1.yaml:/etc/ks.yaml
       ports:
-          - "9696:9696"
+          - "9090:9090"
 
       environment:
           - MYSQL_ROOT_PASSWORD=${ROOT_PASSWORD}
