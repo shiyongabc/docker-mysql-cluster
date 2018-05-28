@@ -1,4 +1,4 @@
-tmpnetworkname="testwifi"
+tmpnetworkname="mysql"
 tmpcontainername="mysql1"
 docker-compose up -d  $tmpcontainername
 tmpcontainerName=$(docker-compose ps | grep $tmpcontainername | awk '{print $1}')
