@@ -6,7 +6,8 @@ use docker and kingshard build mysql cluster
 
 
 ### print
-
+### create network
+docker network create testwifi
 ```
 sh start.sh
 
