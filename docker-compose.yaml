@@ -11,7 +11,7 @@ services:
           - ./${MYSQL1_SAVE_PATH}:/var/lib/mysql
 
       ports:
-          - "3306:3306"
+          - "19888:3306"
       environment:
           - MYSQL_ROOT_PASSWORD=${ROOT_PASSWORD}
           - MYSQL_DATABASE=${DATABASE}
