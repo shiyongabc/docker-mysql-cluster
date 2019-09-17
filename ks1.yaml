@@ -24,7 +24,7 @@ log_sql: on
 #blacklist_sql_file: /Users/flike/blacklist
 
 # only allow this ip list ip to connect kingshard
-allow_ips: 220.197.198.85 112.74.186.73
+# allow_ips: 220.197.198.85 112.74.186.73
 
 # the charset of kingshard, if you don't set this item
 # the default charset of kingshard is utf8.
@@ -43,7 +43,7 @@ nodes :
     password : 123456
 
     # master represents a real mysql master server
-    master : 220.197.198.85:3306
+    master : 58.16.65.208:3306
 
     # slave represents a real mysql salve server,and the number after '@' is
     # read load weight of this slave.
@@ -60,7 +60,7 @@ nodes :
     password : 123456
 
     # master represents a real mysql master server
-    master : 112.74.186.73:8081
+    master : 58.16.65.208:8081
 
     # slave represents a real mysql salve server,and the number after '@' is
     # read load weight of this slave.
