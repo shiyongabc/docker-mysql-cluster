@@ -46,7 +46,7 @@ nodes :
     password : 123456
 
     # master represents a real mysql master server
-    master : 58.16.65.208:19888
+    master : 127.0.0.1:19888
 
     # slave represents a real mysql salve server,and the number after '@' is
     # read load weight of this slave.
@@ -63,7 +63,7 @@ nodes :
     password : 123456
 
     # master represents a real mysql master server
-    master : 58.16.65.208:8081
+    master : 127.0.0.1:8081
 
     # slave represents a real mysql salve server,and the number after '@' is
     # read load weight of this slave.
@@ -82,11 +82,3 @@ schema :
         nodes: [mysql1,mysql2]
         type: hash
         locations: [4,4]
-
-    -
-        table: test_shard_range
-        key: id
-        type: range
-        nodes: [mysql1,mysql2]
-        locations: [4,4]
-        table_row_limit: 10000
