@@ -30,20 +30,20 @@ services:
           - MYSQL_DATABASE=${DATABASE}
       restart: always
     
-#    kingshard:
-#      container_name: "kingshard"
-#      image: shiyongabc/kingshard
-#      volumes:
-#          - ./ks1.yaml:/etc/ks.yaml
-#      ports:
-#          - "9090:9090"
-#      environment:
-#          - MYSQL_ROOT_PASSWORD=${ROOT_PASSWORD}
-#          - MYSQL_DATABASE=${DATABASE}
-#      links:
-#          - mysql1
-#          - mysql2
-#      restart: always
+    kingshard:
+      container_name: "kingshard"
+      image: shiyongabc/kingshard
+      volumes:
+          - ./ks1.yaml:/etc/ks.yaml
+      ports:
+          - "9090:9090"
+      environment:
+          - MYSQL_ROOT_PASSWORD=${ROOT_PASSWORD}
+          - MYSQL_DATABASE=${DATABASE}
+      links:
+          - mysql1
+          - mysql2
+      restart: always
 #networks: # docker网络设置
 #  mysql: # 自定义网络名称
 #    driver: bridge # 桥接

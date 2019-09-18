@@ -72,6 +72,7 @@ nodes :
 
 # schema defines sharding rules, the db is the sharding table database.
 schema :
+    user: root
     db : kingshard
     nodes: [mysql1,mysql2]
     default: mysql1
