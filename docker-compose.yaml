@@ -9,7 +9,7 @@ services:
       image: mysql:5.7
       volumes:
           - ./${MYSQL1_SAVE_PATH}:/var/lib/mysql
-
+          - ./conf:/etc/mysql/conf.d:ro
       ports:
           - "19888:3306"
       environment:
@@ -22,7 +22,7 @@ services:
       image: mysql:5.7
       volumes:
           - ./${MYSQL2_SAVE_PATH}:/var/lib/mysql
-
+          - ./conf:/etc/mysql/conf.d:ro
       ports:
           - "8081:3306"
       environment:
