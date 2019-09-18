@@ -19,7 +19,7 @@ log_sql : on
 #如果设置了该项，则只输出SQL执行时间超过slow_log_time(ms)的SQL日志，不设置则输出全部SQL日志
 slow_log_time : 100
 #日志文件路径，如果不配置则会输出到终端。
-log_path : /Users/flike/log
+#log_path : /Users/flike/log
 # sql黑名单文件路径
 # 所有在该文件中的sql都会被kingshard拒绝转发
 #blacklist_sql_file: /Users/flike/blacklist
