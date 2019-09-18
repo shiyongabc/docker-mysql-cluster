@@ -1,7 +1,10 @@
 # server listen addr
 addr : 0.0.0.0:9090
 # the web api server
-
+web_addr : 0.0.0.0:8080
+#HTTP Basic Auth
+web_user : admin
+web_password : admin
 # server user and password
 user :  root
 password : 123456
@@ -24,7 +27,7 @@ log_sql: on
 #blacklist_sql_file: /Users/flike/blacklist
 
 # only allow this ip list ip to connect kingshard
-# allow_ips: 220.197.198.85 112.74.186.73
+allow_ips: 127.0.0.1 222.87.43.40
 
 # the charset of kingshard, if you don't set this item
 # the default charset of kingshard is utf8.
